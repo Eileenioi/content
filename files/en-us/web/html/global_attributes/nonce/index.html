@@ -35,7 +35,7 @@ random number generator. Nonces should be generated differently each time the pa
 <pre class="brush: css">
 const crypto = require('crypto');
 crypto.randomBytes(16).toString('base64');
-// '8IBTHwOdqNKAWeKl7plt8g=='
+// ''
 </pre>
 
 <h4>Allow-listing inline script</h4>
@@ -50,7 +50,8 @@ crypto.randomBytes(16).toString('base64');
 <a href="/en-US/docs/Web/HTTP/Headers/Content-Security-Policy"><code>Content-Security-Policy</code></a> header
 (prepend <code>nonce-</code>):</p>
 
-<pre class="brush: http">Content-Security-Policy: script-src 'nonce-8IBTHwOdqNKAWeKl7plt8g=='</pre>
+<pre class="brush: http">Content-Security-Policy: script-src 'nonce-8
+'</pre>
 
 <h3>Accessing nonces and nonce hiding</h3>
 
